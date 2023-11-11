@@ -45,6 +45,7 @@ int _printf(const char *format, ...)
 		else
 		ptot += _putchar('%');
 	}
+	va_end(args);
 	return (ptot);
 }
 
