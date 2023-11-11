@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 				ptot += _putchar(format[i]);
 			}
 		}
-		else
+		else if
 		ptot += _putchar('%');
 	}
 	va_end(args);
