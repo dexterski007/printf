@@ -73,6 +73,9 @@ int print_string(char *str)
 {
 	int i = 0;
 
+	if (str == NULL)
+	str = "(null)";
+
 	for (i = 0; str[i] != '\0'; i++)
 	_putchar(str[i]);
 
