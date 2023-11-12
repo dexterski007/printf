@@ -2,6 +2,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+
+
 /**
  * _printf - A printf alternative function
  *
@@ -54,7 +56,7 @@ int _printf(const char *format, ...)
 }
 
 /**
- * _putchar - Writes the character 'c' to the standard output
+ * _putchar-Writes the character 'c' to the standard output
  * @c: The character be print
  *
  * Return: On success,returns 1.On error,returns -1 with errno set appropriately.
@@ -65,7 +67,7 @@ int _putchar(char c)
 }
 
 /**
- * print_string - prints a string to stdout
+ * print_string-prints a string to stdout
  * @str: The string to print
  *
  * Return: On success the length of the string.

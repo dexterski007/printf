@@ -6,8 +6,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-
-
 /**
  * struct format - converter for printf
  * @ph: type char pointer of the specifier

@@ -1,2 +1,3 @@
-test 2
-printf
+test
+test
+2  
