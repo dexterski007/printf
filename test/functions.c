@@ -13,7 +13,6 @@ int print_integer(int n)
 	unsigned int r;
 	int i = 0;
 
-	r = n;
 	if (n < 0)
 	{
 	n = n * -1;
@@ -21,6 +20,7 @@ int print_integer(int n)
 	_putchar('-');
 	i++;
 	}
+	r = n;
 	r = r / 10;
 	if (r != 0)
 	print_integer(r);
