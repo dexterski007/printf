@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
 	va_start(args, format);
@@ -60,10 +60,7 @@ int _printf(const char *format, ...)
  */
 int _putchar(char c)
 {
-	if ((c >= 32 && c <= 126) || c == 10)
 	return (write(1, &c, 1));
-	
-	return (-1);
 }
 
 
