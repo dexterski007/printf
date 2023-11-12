@@ -11,7 +11,8 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, ptot = 0, digit = 0;
+	int i = 0, ptot = 0;
+	long int digit = 0;
 	va_list args;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -32,7 +33,7 @@ int _printf(const char *format, ...)
 				ptot += print_string(va_arg(args, char *));
 			else if (format[i] == 'd' || format[i] == 'i')
 				{
-				digit = va_arg(args, int);
+				digit = va_arg(args, long int);
 				if (digit < 0)
 				ptot++;
 				ptot += len_count(digit);

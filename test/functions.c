@@ -26,9 +26,9 @@ int len_count(int n)
  * Return: Nothing
 **/
 
-void print_integer(int n)
+void print_integer(long int n)
 {
-	unsigned int r;
+	long int r;
 
 	if (n < 0)
 	{
@@ -39,5 +39,5 @@ void print_integer(int n)
 	r = r / 10;
 	if (r != 0)
 	print_integer(r);
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar((long int) n % 10 + '0');
 }

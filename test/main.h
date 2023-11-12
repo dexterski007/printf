@@ -13,7 +13,7 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(char *str);
-void print_integer(int n);
+void print_integer(long int n);
 int len_count(int n);
 int print_binary(va_list args);
 int print_unsigned(va_list args);
