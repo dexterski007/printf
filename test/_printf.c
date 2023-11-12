@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 				ptot += _putchar(format[i]);
 			}
 		}
-		else 
+		else
 		ptot += _putchar('%');
 	}
 	va_end(args);
