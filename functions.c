@@ -23,19 +23,17 @@ int len_count(int n)
  *
  * @n: number
  *
- * Return: Number of printed characters
+ * Return: Nothing
 **/
 
-int print_integer(int n)
+void print_integer(int n)
 {
 	unsigned int r;
-	int i = 0;
 
 	if (n == -2147483648)
 	{
 		_putchar('-');
 		_putchar('2');
-		i += 2;
 		print_integer(147483648);
 	}
 
@@ -44,13 +42,11 @@ int print_integer(int n)
 	n = n * -1;
 	r = n;
 	_putchar('-');
-	i++;
 	}
 	r = n;
 	r = r / 10;
 	if (r != 0)
 	print_integer(r);
 	_putchar((unsigned int) n % 10 + '0');
-	i += len_count(n);
-	return (i);
+	return;
 }
