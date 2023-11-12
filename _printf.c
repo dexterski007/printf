@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - An alternative printf function
+ * _printf - custom printf implementation
  *
  * @format: format specifier
  * @...: arguments
