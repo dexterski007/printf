@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 				ptot += _putchar(format[i]);
 			}
 		}
-		else
+		else 
 		ptot += _putchar('%');
 	}
 	va_end(args);
@@ -60,7 +60,10 @@ int _printf(const char *format, ...)
  */
 int _putchar(char c)
 {
+	if ((c >= 32 && c <= 126) || c == 10)
 	return (write(1, &c, 1));
+	
+	return (-1);
 }
 
 
