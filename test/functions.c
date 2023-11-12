@@ -48,4 +48,5 @@ void print_integer(int n)
 	if (r != 0)
 	print_integer(r);
 	_putchar((unsigned int) n % 10 + '0');
+	return;
 }
