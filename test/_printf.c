@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == 'd' || format[i] == 'i')
 				{
 				digit = va_arg(args, int);
-				if (digit <= 0)
+				if (digit < 0)
 				ptot++;
 				ptot += len_count(digit);
 				print_integer(digit);

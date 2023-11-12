@@ -35,12 +35,12 @@ void print_integer(int n)
 		_putchar('-');
 		_putchar('2');
 		print_integer(147483648);
+		return;
 	}
 
 	if (n < 0)
 	{
 	n = n * -1;
-	r = n;
 	_putchar('-');
 	}
 	r = n;
