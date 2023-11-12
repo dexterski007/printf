@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - custom printf implementation
+ * _printf - An alternative printf function
  *
  * @format: format specifier
  * @...: arguments
@@ -11,17 +11,20 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, ptot = 0, digit = 0;
+	int i = 0, ptot = 0, digit;
 	va_list args;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+
 	va_start(args, format);
+
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
-			ptot += _putchar(format[i]);
+			_putchar(format[i]);
+			ptot++;
 		}
 		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
