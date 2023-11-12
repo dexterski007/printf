@@ -10,23 +10,18 @@
 **/
 
 int _printf(const char *format, ...)
-
 {
-	int i = 0, ptot = 0;
+	long int i = 0, ptot = 0, digit = 0;
 	va_list args;
-
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-
 	va_start(args, format);
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
-			_putchar(format[i]);
-			ptot++;
+			ptot += _putchar(format[i]);
 		}
 		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
@@ -36,7 +31,13 @@ int _printf(const char *format, ...)
 			else if (format[i] == 's')
 				ptot += print_string(va_arg(args, char *));
 			else if (format[i] == 'd' || format[i] == 'i')
-				ptot += print_integer(va_arg(args, int));
+				{
+				digit = va_arg(args, long int);
+				if (digit < 0)
+				ptot++;
+				ptot += len_count(digit);
+				print_integer(digit);
+				}
 			else if (format[i] == '%')
 				ptot += _putchar('%');
 			else
