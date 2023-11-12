@@ -26,7 +26,7 @@ int len_count(int n)
  * Return: Nothing
 **/
 
-void print_integer(long int n)
+void print_integer(int n)
 {
 	long int r;
 
