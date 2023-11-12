@@ -11,7 +11,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, ptot = 0, digit;
+	int i = 0, ptot = 0, digit = 0;
 	va_list args;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
