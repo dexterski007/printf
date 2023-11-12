@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
 	va_start(args, format);
@@ -35,6 +35,8 @@ int _printf(const char *format, ...)
 				ptot += _putchar(va_arg(args, int));
 			else if (format[i] == 's')
 				ptot += print_string(va_arg(args, char *));
+			else if (format[i] == 'd' || format[i] == 'i')
+				ptot += print_integer(va_arg(args, int));
 			else if (format[i] == '%')
 				ptot += _putchar('%');
 			else
@@ -43,7 +45,7 @@ int _printf(const char *format, ...)
 				ptot += _putchar(format[i]);
 			}
 		}
-		else 
+		else
 		ptot += _putchar('%');
 	}
 	va_end(args);
