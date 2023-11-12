@@ -35,6 +35,8 @@ int _printf(const char *format, ...)
 				ptot += _putchar(va_arg(args, int));
 			else if (format[i] == 's')
 				ptot += print_string(va_arg(args, char *));
+			else if (format[i] == 'd' || format[i] == 'i')
+				ptot += print_integer(va_arg(args, int));
 			else if (format[i] == '%')
 				ptot += _putchar('%');
 			else
