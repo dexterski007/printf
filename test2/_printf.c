@@ -54,7 +54,7 @@ int _printf(const char *format, ...)
 }
 
 /**
- * _putchar - Writes the character 'c' to the standard output
+ * _putchar-Writes the character 'c' to the standard output
  * @c: The character be print
  *
  * Return: On success,returns 1.On error,returns -1 with errno set appropriately.
