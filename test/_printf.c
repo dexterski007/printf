@@ -11,17 +11,20 @@
 
 int _printf(const char *format, ...)
 {
-	long int i = 0, ptot = 0, digit = 0;
+	int i = 0, ptot = 0, digit;
 	va_list args;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+
 	va_start(args, format);
+
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
-			ptot += _putchar(format[i]);
+			_putchar(format[i]);
+			ptot++;
 		}
 		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
@@ -32,7 +35,7 @@ int _printf(const char *format, ...)
 				ptot += print_string(va_arg(args, char *));
 			else if (format[i] == 'd' || format[i] == 'i')
 				{
-				digit = va_arg(args, long int);
+				digit = va_arg(args, int);
 				if (digit < 0)
 				ptot++;
 				ptot += len_count(digit);

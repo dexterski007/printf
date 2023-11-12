@@ -28,7 +28,15 @@ int len_count(int n)
 
 void print_integer(int n)
 {
-	long int r;
+	unsigned int r;
+
+	if (n == -2147483648)
+	{
+		_putchar('-');
+		_putchar('2');
+		print_integer(147483648);
+		return;
+	}
 
 	if (n < 0)
 	{
@@ -39,5 +47,6 @@ void print_integer(int n)
 	r = r / 10;
 	if (r != 0)
 	print_integer(r);
-	_putchar((long int) n % 10 + '0');
+	_putchar((unsigned int) n % 10 + '0');
+	return;
 }
