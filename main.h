@@ -54,12 +54,12 @@ int print_perc(va_list args, char *buff,
 	int flag, int width, int precis, int size);
 int print_str(va_list args, char *buff,
 	int flag, int width, int precis, int size);
-int print_num(int n);
+int print_num(va_list args, char *buff,
+	int flag, int width, int precis, int size);
 int print_bin(va_list args);
-int print_uns(va_list args);
 
 /* functions2.c */
-
+int print_uns(va_list args);
 int print_oct(va_list args);
 int print_hex(va_list args);
 int print_HEX(va_list args);
@@ -85,5 +85,6 @@ int print_minus_flag(char format, va_list args);
 
 int isnum(char c);
 int _isprint(char c);
+long int size_dig(long int n, int s);
 
 #endif

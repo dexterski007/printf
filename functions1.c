@@ -106,3 +106,48 @@ int print_str(va_list args, char *buff,
 	}
 	return (write(1, s, len));
 }
+
+/**
+ * print_num - print number
+ *
+ * @args: arguments
+ * @buff: buffer
+ * @flag: flag
+ * @width: width
+ * @precis: precision
+ * @size: size
+ *
+ * Return: number of chars
+**/
+
+int print_num(va_list args, char *buff,
+	int flag, int width, int precis, int size)
+{
+	int j = 1024 - 2;
+	int is_neg = 0;
+	long int p = va_arg(args, long int);
+	unsigned long int dig;
+
+	p = size_dig(p, size);
+
+	if (p == 0)
+		buff[j--] = '0';
+	buff[1024 - 1] = '\0';
+
+	dig = (unsigned long int)p;
+
+	if (p < 0)
+	{
+		dig = (unsigned long int)((-1) * p);
+		is_neg = 1;
+	}
+	while (dig > 0)
+	{
+		buff[j--] = (dig % 10) + '0';
+		dig /= 10;
+	}
+
+	j++;
+
+	return (num_write(is_neg, j, buff, flag, width, precis, size));
+}

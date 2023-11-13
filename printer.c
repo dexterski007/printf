@@ -21,7 +21,8 @@ int printer(const char *format, int *i, va_list args, char *buff,
 {
 	int j = 0, ptot2 = 0, len007 = 0;
 	strf func[] = {
-		{'c', print_char}, {'s', print_str}, {'%', print_perc}, {'\0', NULL}
+		{'c', print_char}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
+		{'d', print_num}, {'\0', NULL}
 		};
 
 	for (j = 0; func[j].form != '\0'; j++)
@@ -113,7 +114,7 @@ int num_write(int is_neg, int i, char *buff,
 
 {
 	int len = 1024 - i - 1;
-	char space = ' ', t;
+	char space = ' ',  t = 0;
 
 	(void)(size);
 
