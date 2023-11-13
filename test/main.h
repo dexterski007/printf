@@ -17,7 +17,7 @@
  */
 struct formats
 {
-	char func;
+	char form;
 	int (*id)(va_list, char[], int, int, int, int);
 };
 
