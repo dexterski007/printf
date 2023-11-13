@@ -9,16 +9,19 @@
 
 /**
  * struct formats - structure
- * @form: format
+ *
+ * @func: format
  * @id: function id
  *
- **/
-
+ * this structure is for associating a format with a function
+ */
 struct formats
 {
-	char form;
+	char func;
 	int (*id)(va_list, char[], int, int, int, int);
 };
+
+typedef struct formats strf;
 
 /* functions0.c */
 
