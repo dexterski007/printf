@@ -1,49 +1,90 @@
 #include "main.h"
 
 /**
- * _printf - An new way to printf
+ * _printf - An alternative printf function
  *
- * @format: format
- * @...: args
+ * @format: format specifier
+ * @...: arguments
  *
- * Return: Num of printd characters
+ * Return: Number of printed characters
 **/
 
 int _printf(const char *format, ...)
 {
-	int k = 0, ptot = 0, isp = 0;
-	int flag = 0, width = 0, size = 0, b_ind = 0, precis = 0;
-	char buff[1024];
+	int i = 0, ptot = 0, digit;
 	va_list args;
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+
 	va_start(args, format);
-	for (k = 0; format[k] != '\0'; k++)
+
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[k] != '%')
+		if (format[i] != '%')
 		{
-			buff[b_ind++] = format[k];
-			if (b_ind == 1024)
-				p_buff(buff, &b_ind);
+			_putchar(format[i]);
 			ptot++;
 		}
-		else
+		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			p_buff(buff, &b_ind);
-			flag = w_flag(format, &k);
-			width = w_width(format, &k, args);
-			precis = w_precis(format, &k, args);
-			size = w_size(format, &k);
-			++k;
-			isp = printer(format, &k, args, buff, flag, width, precis, size);
-			if (isp == -1)
-				return (-1);
-			ptot += isp;
+			i++;
+			if (format[i] == 'c')
+				ptot += _putchar(va_arg(args, int));
+			else if (format[i] == 's')
+				ptot += print_string(va_arg(args, char *));
+			else if (format[i] == 'd' || format[i] == 'i')
+				{
+				digit = va_arg(args, int);
+				if (digit < 0)
+				ptot++;
+				ptot += len_count(digit);
+				print_integer(digit);
+				}
+			else if (format[i] == '%')
+				ptot += _putchar('%');
+			else
+			{
+				ptot += _putchar('%');
+				ptot += _putchar(format[i]);
+			}
 		}
+		else
+		ptot += _putchar('%');
 	}
-	p_buff(buff, &b_ind);
 	va_end(args);
 	return (ptot);
 }
 
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+
+/**
+ * print_string - prints a string to stdout
+ * @str: The string to print
+ *
+ * Return: On success the length of the string.
+ */
+int print_string(char *str)
+{
+	int i = 0;
+
+	if (str == NULL)
+	str = "(null)";
+
+	for (i = 0; str[i] != '\0'; i++)
+	_putchar(str[i]);
+
+	return (i);
+}

@@ -22,7 +22,7 @@ int printer(const char *format, int *i, va_list args, char *buff,
 	int j = 0, ptot2 = -1, len007 = 0;
 	strf func[] = {
 		{'c', print_car}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
-		{'d', print_num}, {'u', print_uns}, {'b', print_bin}, {'\0', NULL}
+		{'d', print_num}, {'u', print_uns}, {'b', print_bin}, {'x', print_hex}, {'X', print_HEX}, {'\0', NULL}
 		};
 
 	for (j = 0; func[j].form != '\0'; j++)
