@@ -10,8 +10,8 @@
 int main(void)
 {
         
-    _printf("Unsigned:[%d]\n", 09999);
-    printf("Unsigned:[%d]\n", 09999);
+    _printf("Unsigned:[%d]\n", k);
+    printf("Unsigned:[%d]\n", k);
     
     return (0);
 }

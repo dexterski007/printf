@@ -33,8 +33,6 @@ int _printf(const char *format, ...)
 			else if (format[i] == 'd' || format[i] == 'i')
 				{
 				digit = va_arg(args, int);
-				if (digit < 0)
-				ptot++;
 				ptot += len_count(digit);
 				print_integer(digit);
 				}
@@ -71,7 +69,7 @@ int _putchar(char c)
  * print_string - prints a string to stdout
  * @str: The string to print
  *
- * Return: success the length of the string.
+ * Return: On success the length of the string.
  */
 int print_string(char *str)
 {
