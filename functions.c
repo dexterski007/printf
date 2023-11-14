@@ -49,5 +49,4 @@ void print_integer(int n)
 	print_integer(r);
 
 	_putchar((int) n % 10 + '0');
-	return;
 }

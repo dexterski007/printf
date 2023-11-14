@@ -16,15 +16,12 @@ int _printf(const char *format, ...)
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-
 	va_start(args, format);
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
-			_putchar(format[i]);
-			ptot++;
+			ptot += _putchar(format[i]);
 		}
 		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
