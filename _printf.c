@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[k] != '%')
 		{
-			buff[b_ind++] = format[i];
+			buff[b_ind++] = format[k];
 			if (b_ind == 1024)
 				p_buff(buff, &b_ind);
 			ptot++;
@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 			width = w_width(format, &k, args);
 			precis = w_precis(format, &k, args);
 			size = w_size(format, &k);
-			i++;
+			k++;
 			is_printed = printer(format, &k, args, buff, flag, width, precis, size);
 			if (is_printed == -1)
 				return (-1);
