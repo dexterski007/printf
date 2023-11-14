@@ -22,7 +22,7 @@ int printer(const char *format, int *i, va_list args, char *buff,
 	int j = 0, ptot2 = 0, len007 = 0;
 	strf func[] = {
 		{'c', print_char}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
-		{'d', print_num}, {'\0', NULL}
+		{'d', print_num}, {'u', print_uns}, {'b', print_bin}, {'\0', NULL}
 		};
 
 	for (j = 0; func[j].form != '\0'; j++)
@@ -52,8 +52,9 @@ int printer(const char *format, int *i, va_list args, char *buff,
 }
 
 /**
- * char_write - prepares chars
+ * char_write - to write char
  *
+ * parametres
  * @c: char
  * @buff: buffer
  * @flag: flag
@@ -87,7 +88,7 @@ int char_write(char c, char *buff, int flag,
 			buff[1024 - i - 2] = space;
 
 		if (flag & 1)
-			return (write(1, &buff[0], 1) + (write(1, &buff[1024 - i - 1], width - 1)));
+			return (write(1, &buff[0], 1) + write(1, &buff[1024 - i - 1], width - 1));
 				else
 			return (write(1, &buff[1024 - i - 1], width - 1) +
 						write(1, &buff[0], 1));

@@ -10,7 +10,7 @@
  * @precis: precision
  * @size: size
  *
- * Return: number of chars
+ * Return: number of chars to p
 **/
 
 int print_char(va_list args, char *buff, int flag,
@@ -45,7 +45,7 @@ int print_perc(va_list args, char *buff, int flag,
 	(void)(width);
 	(void)(precis);
 	(void)(size);
-
+	
 	return (write(1, "%%", 1));
 }
 
@@ -150,4 +150,53 @@ int print_num(va_list args, char *buff,
 	j++;
 
 	return (num_write(is_neg, j, buff, flag, width, precis, size));
+}
+
+/**
+ * print_bin - print bin
+ *
+ * @args: arguments
+ * @buff: buffer
+ * @flag: flag
+ * @width: width
+ * @precis: precision
+ * @size: size
+ *
+ * Return: number of chars
+**/
+
+int print_bin(va_list args, char *buff,
+	int flag, int width, int precis, int size)
+
+{
+	unsigned int a, b, c, tot;
+	unsigned int tab[32];
+	int i;
+	char car;
+
+	(void)(buff);
+	(void)(flag);
+	(void)(width);
+	(void)(precis);
+	(void)(size);
+
+	a = va_arg(args, unsigned int);
+	b = 2147483648;
+	tab[0] = a / b;
+	for (c = 1; c < 32; c++)
+	{
+		b /= 2;
+		tab[c] = (a / b) % 2;
+	}
+	for (c = 0, tot = 0, i = 0; c < 32; c++)
+	{
+		tot += tab[c];
+		if (tot || c == 31)
+		{
+		car = '0' + tab[c];
+		write(1, &car, 1);
+		i++;
+		}
+	}
+	return (i);
 }

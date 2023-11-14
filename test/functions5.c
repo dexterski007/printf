@@ -1,7 +1,7 @@
 /**
  * isnum - a function to check if a char is an int
  *
- * @c: character
+ * @c: character to check
  *
  * Return: 1 or 0
 **/
@@ -47,3 +47,23 @@ long int size_dig(long int n, int s)
 		return ((short)n);
 	return ((int)n);
 }
+
+/**
+ * cvrt_uns - check unsigned
+ *
+ * @n: number to check
+ * @s: size of number
+ *
+ * Return: short or long
+**/
+
+long int cvrt_uns(unsigned long int n, int s)
+{
+	if (s == 2)
+	return (n);
+	else if (s == 1)
+	return ((unsigned short)n);
+	return ((unsigned int)n);
+}
+
+

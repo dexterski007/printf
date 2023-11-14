@@ -8,7 +8,7 @@
 #include <unistd.h>
 
 /**
- * struct formats - structure
+ * struct formats - structure to format
  *
  * @func: format
  * @id: function id
@@ -50,24 +50,29 @@ int num_prep(int i, char *buff, int flag,
 
 int print_char(va_list args, char *buff,
 	int flag, int width, int precis, int size);
-int print_perc(va_list args, char *buff,
-	int flag, int width, int precis, int size);
+int print_perc(va_list args, char *buff, int flag,
+        int width, int precis, int size);
 int print_str(va_list args, char *buff,
 	int flag, int width, int precis, int size);
 int print_num(va_list args, char *buff,
 	int flag, int width, int precis, int size);
-int print_bin(va_list args);
+int print_bin(va_list args, char *buff,
+        int flag, int width, int precis, int size);
+
 
 /* functions2.c */
-int print_uns(va_list args);
-int print_oct(va_list args);
+
+int prep_uns(int is_neg, int i, char *buff, int flag,
+        int width, int precis, int size);
+int print_uns(va_list args, char *buff,
+	int flag, int width, int precis, int size);
 int print_hex(va_list args);
 int print_HEX(va_list args);
 int print_cus(va_list args);
-int print_poi(va_list args);
 
 /* functions3.c */
 
+int print_poi(va_list args);
 int print_rev(va_list args);
 int print_rot(va_list args);
 int print_plus_space_hash(char format, va_list args);
@@ -86,5 +91,5 @@ int print_minus_flag(char format, va_list args);
 int isnum(char c);
 int _isprint(char c);
 long int size_dig(long int n, int s);
-
+long int cvrt_uns(unsigned long int n, int s);
 #endif
