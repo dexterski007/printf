@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * printer - printer chooser function
+ * printer -`printer chooser function
  *
  * @format: format specifier
  * @i: index
- * @args: arguments
+ * @args: arguments 
  * @buff: buffer
  * @flag: flag
  * @width: width
@@ -52,8 +52,10 @@ int printer(const char *format, int *i, va_list args, char *buff,
 }
 
 /**
- * char_write - prepares chars
+ * function: char_write
+ * description : Prepares characters for writing
  *
+ * parametres
  * @c: char
  * @buff: buffer
  * @flag: flag
