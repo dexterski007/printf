@@ -3,7 +3,7 @@
 /**
  * _printf - An new way to printf
  *
- * @format: format specifier
+ * @format: format
  * @...: args
  *
  * Return: Num of printd characters
@@ -11,7 +11,7 @@
 
 int _printf(const char *format, ...)
 {
-	int k = 0, ptot = 0, is_printed = 0;
+	int k = 0, ptot = 0, isp = 0;
 	int flag = 0, width = 0, size = 0, b_ind = 0, precis = 0;
 	char buff[1024];
 	va_list args;
@@ -35,14 +35,13 @@ int _printf(const char *format, ...)
 			width = w_width(format, &k, args);
 			precis = w_precis(format, &k, args);
 			size = w_size(format, &k);
-			k++;
-			is_printed = printer(format, &k, args, buff, flag, width, precis, size);
-			if (is_printed == -1)
+			++k;
+			isp = printer(format, &k, args, buff, flag, width, precis, size);
+			if (isp == -1)
 				return (-1);
-			ptot += is_printed;
+			ptot += isp;
 		}
 	}
-
 	p_buff(buff, &b_ind);
 	va_end(args);
 	return (ptot);
