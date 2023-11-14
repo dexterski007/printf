@@ -21,7 +21,7 @@ int printer(const char *format, int *i, va_list args, char *buff,
 {
 	int j = 0, ptot2 = -1, len007 = 0;
 	strf func[] = {
-		{'c', print_char}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
+		{'c', print_car}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
 		{'d', print_num}, {'u', print_uns}, {'b', print_bin}, {'\0', NULL}
 		};
 

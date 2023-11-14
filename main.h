@@ -48,7 +48,7 @@ int num_prep(int i, char *buff, int flag,
 
 /* functions1.c */
 
-int print_char(va_list args, char *buff,
+int print_car(va_list args, char *buff,
 	int flag, int width, int precis, int size);
 int print_perc(va_list args, char *buff, int flag,
         int width, int precis, int size);
