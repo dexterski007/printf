@@ -11,17 +11,17 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, ptot = 0, is_printed = 0;
+	int k = 0, ptot = 0, is_printed = 0;
 	int flag = 0, width = 0, size = 0, b_ind = 0, precis = 0;
 	char buff[1024];
 	va_list args;
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(args, format);
-	for (i = 0; format[i] != '\0'; i++)
+	for (k = 0; format[k] != '\0'; k++)
 	{
-		if (format[i] != '%')
+		if (format[k] != '%')
 		{
 			buff[b_ind++] = format[i];
 			if (b_ind == 1024)
@@ -31,12 +31,12 @@ int _printf(const char *format, ...)
 		else
 		{
 			p_buff(buff, &b_ind);
-			flag = w_flag(format, &i);
-			width = w_width(format, &i, args);
-			precis = w_precis(format, &i, args);
-			size = w_size(format, &i);
+			flag = w_flag(format, &k);
+			width = w_width(format, &k, args);
+			precis = w_precis(format, &k, args);
+			size = w_size(format, &k);
 			i++;
-			is_printed = printer(format, &i, args, buff, flag, width, precis, size);
+			is_printed = printer(format, &k, args, buff, flag, width, precis, size);
 			if (is_printed == -1)
 				return (-1);
 			ptot += is_printed;

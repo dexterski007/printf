@@ -5,7 +5,7 @@
  *
  * @format: format specifier
  * @i: index
- * @args: arguments 
+ * @args: arguments
  * @buff: buffer
  * @flag: flag
  * @width: width
@@ -89,7 +89,7 @@ int char_write(char c, char *buff, int flag,
 			buff[1024 - i - 2] = space;
 
 		if (flag & 1)
-			return (write(1, &buff[0], 1) + (write(1, &buff[1024 - i - 1], width - 1)));
+			return (write(1, &buff[0], 1) + write(1, &buff[1024 - i - 1], width - 1));
 				else
 			return (write(1, &buff[1024 - i - 1], width - 1) +
 						write(1, &buff[0], 1));
