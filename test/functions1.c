@@ -133,7 +133,7 @@ int print_num(va_list args, char *buff,
 	if (p == 0)
 		buff[j--] = '0';
 	buff[1024 - 1] = '\0';
-	
+
 	dig = (unsigned long int)p;
 
 	if (p < 0)
