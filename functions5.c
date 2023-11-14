@@ -1,7 +1,7 @@
 /**
  * isnum - a function to check if a char is an int
  *
- * @c: character
+ * @c: character to check
  *
  * Return: 1 or 0
 **/

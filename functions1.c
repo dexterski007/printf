@@ -10,7 +10,7 @@
  * @precis: precision
  * @size: size
  *
- * Return: number of chars
+ * Return: number of chars to p
 **/
 
 int print_char(va_list args, char *buff, int flag,

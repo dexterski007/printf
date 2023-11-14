@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printer -`printer chooser function
+ * printer - printer chooser function
  *
  * @format: format specifier
  * @i: index
