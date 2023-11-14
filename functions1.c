@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_char - print chars
+ * print_car - print chars
  *
  * @args: arguments
  * @buff: buffer
@@ -13,13 +13,15 @@
  * Return: number of chars to p
 **/
 
-int print_char(va_list args, char *buff, int flag,
+int print_car(va_list args, char *buff, int flag,
 	int width, int precis, int size)
 
 {
-	char c = va_arg(args, int);
+	char car;
 
-	return (char_write(c, buff, flag, width, precis, size));
+	car = va_arg(args, int);
+
+	return (char_write(car, buff, flag, width, precis, size));
 }
 
 /**
@@ -66,7 +68,7 @@ int print_str(va_list args, char *buff,
 	int flag, int width, int precis, int size)
 
 {
-	int len = 0, i = 0;
+	int len = 0, j = 0;
 	char *s = va_arg(args, char *);
 
 	(void)(buff);
@@ -77,30 +79,28 @@ int print_str(va_list args, char *buff,
 
 	if (s == NULL)
 	{
-		s = ("null");
-		if (precis >= 6)
-			s = "      ";
+s = ("null");
+if (precis >= 6)
+s = "      ";
 	}
 	while (s[len] != '\0')
 		len++;
-
 	if (precis >= 0 && precis < len)
 		len = precis;
-
 	if (width > len)
 	{
 		if (flag & 1)
 		{
 			write(1, &s[0], len);
-			for (i = width - len; i > 0; i--)
+			for (j = width - len; j > 0; j--)
 				write(1, " ", 1);
 			return (width);
 		}
 		else
 		{
-			for (i = width - len; i > 0; i--)
+			for (j = width - len; j > 0; j--)
 				write(1, " ", 1);
-			write(1, s, len);
+			write(1, &s[0], len);
 				return (width);
 		}
 	}
