@@ -3,9 +3,8 @@
 #include <unistd.h>
 
 
-
 /**
- * _printf - A printf alternative function
+ * _printf - A printf adfeflternative function
  *
  * @format: format specifier
  * @...: arguments
