@@ -19,9 +19,9 @@ int printer(const char *format, int *i, va_list args, char *buff,
 	int flag, int width, int precis, int size)
 
 {
-	int j = 0, ptot2 = 0, len007 = 0;
+	int j = 0, ptot2 = -1, len007 = 0;
 	strf func[] = {
-		{'c', print_char}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
+		{'c', print_car}, {'s', print_str}, {'%', print_perc}, {'i', print_num},
 		{'d', print_num}, {'u', print_uns}, {'b', print_bin}, {'\0', NULL}
 		};
 
@@ -69,7 +69,7 @@ int char_write(char c, char *buff, int flag,
 	int width, int precis, int size)
 
 {
-	int i = 0;
+	int j = 0;
 	char space = ' ';
 
 	(void)(precis);
@@ -78,19 +78,19 @@ int char_write(char c, char *buff, int flag,
 	if (flag & 4)
 		space = '0';
 
-	buff[i++] = c;
-	buff[i] = '\0';
+	buff[j++] = c;
+	buff[j] = '\0';
 
 	if (width > 1)
 	{
 		buff[1024 - 1] = '\0';
-		for (i = 0; i < width - 1; i++)
-			buff[1024 - i - 2] = space;
+		for (j = 0; j < width - 1; j++)
+			buff[1024 - j - 2] = space;
 
 		if (flag & 1)
-			return (write(1, &buff[0], 1) + write(1, &buff[1024 - i - 1], width - 1));
+			return (write(1, &buff[0], 1) + write(1, &buff[1024 - j - 1], width - 1));
 				else
-			return (write(1, &buff[1024 - i - 1], width - 1) +
+			return (write(1, &buff[1024 - j - 1], width - 1) +
 						write(1, &buff[0], 1));
 	}
 	return (write(1, &buff[0], 1));
