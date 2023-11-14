@@ -4,9 +4,9 @@
 /**
  * p_buff - prints the buffer
  * @buff: The buffer to print
- * @b_ind: pointer to the array index
+ * @b_ind: pointer to the array to index to go
  *
- * Return: nothing.
+ * Return: nothing?
  */
 void p_buff(char buff[], int *b_ind)
 {

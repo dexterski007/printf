@@ -8,7 +8,7 @@
 #include <unistd.h>
 
 /**
- * struct formats - structure
+ * struct formats - structure to format
  *
  * @func: format
  * @id: function id
