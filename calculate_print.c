@@ -135,7 +135,7 @@ int unsigned_printer(int chkneg, int ind,
 		space = '0';
 	if (wid > len)
 	{
-		for (i = 0; < wid - len; i++)
+		for (i = 0; i < wid - len; i++)
 			buff[i] = space;
 		buff[i] = '\0';
 		if (flag & 1)
