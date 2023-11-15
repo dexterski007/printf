@@ -122,12 +122,15 @@ int get_flag(const char *format, int *ind)
 
 	while (format[act_ind] != '\0')
 	{
-		for (j = 0; flag_id[j] != '\0'; j++)
+		while (flag_id[j] != '\0')
+		{
 			if (format[act_ind] == flag_id[j])
 			{
 				flag |= flag_arr[j];
 				break;
 			}
+			j++;
+		}
 		if (flag_id[j] == 0)
 			break;
 		act_ind++;
