@@ -11,10 +11,21 @@
 int len_count(int n)
 
 {
+	int i = 1;
+
 	if (n == 0)
 	return (0);
 
-	return (1 + len_count(n / 10));
+	if (n < 0)
+	{
+		n = -n;
+		i++;
+	}
+
+	while ((n / 10) != 0)
+		i++;
+
+	return (i);
 }
 
 
@@ -28,7 +39,8 @@ int len_count(int n)
 
 void print_integer(int n)
 {
-	unsigned int r;
+	unsigned long int r;
+	int is_neg = 0;
 
 	if (n == -2147483648)
 	{
@@ -37,17 +49,20 @@ void print_integer(int n)
 		print_integer(147483648);
 		return;
 	}
-
 	if (n < 0)
 	{
-	n = n * -1;
-	_putchar('-');
+		n = -n;
+		is_neg = 1;
 	}
-	r = n;
-	r = r / 10;
+
+	while (n % 10 == 0)
+		n = n / 10;
+
+	r = n / 10;
 	if (r != 0)
 	print_integer(r);
+	if (is_neg)
+	_putchar('-');
 
-	_putchar((int) n % 10 + '0');
-	return;
+	_putchar(n % 10 + '0');
 }

@@ -16,13 +16,13 @@ int _printf(const char *format, ...)
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+
 	va_start(args, format);
+
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
-		{
-			ptot += _putchar(format[i]);
-		}
+		ptot += _putchar(format[i]);
 		else if (format[i] == '%' && format[i + 1] != '\0')
 		{
 			i++;
@@ -71,7 +71,7 @@ int _putchar(char c)
  * print_string - prints a string to stdout
  * @str: The string to print
  *
- * Return: success the length of the string.
+ * Return: On success the length of the string.
  */
 int print_string(char *str)
 {
