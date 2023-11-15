@@ -71,7 +71,7 @@ int _putchar(char c)
  * print_string - prints a string to stdout
  * @str: The string to print
  *
- * Return: On success the length of the string.
+ * Return:On success the length of the string.
  */
 int print_string(char *str)
 {
