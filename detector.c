@@ -79,8 +79,7 @@ int get_preci(const char *format, int *ind, va_list args)
 		return (preci);
 
 	preci = 0;
-	act_ind += 1;
-	while (format[act_ind] != '\0')
+	for (act_ind += 1; format[act_ind] != '\0'; act_ind++)
 	{
 		if (chkdig(format[act_ind]))
 		{
@@ -95,7 +94,6 @@ int get_preci(const char *format, int *ind, va_list args)
 		}
 		else
 			break;
-		act_ind++;
 	}
 
 	*ind = act_ind - 1;
