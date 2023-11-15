@@ -11,10 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1700016705,,"wq"
+:Wq
+|2,0,1700016338,,"Wq"
 :q
 |2,0,1699987708,,"q"
-:wq
-|2,0,1699985158,,"wq"
 :w
 |2,0,1699984038,,"w"
 :WQ
@@ -33,238 +35,283 @@
 	€kb€kb€kb€kb€kb€kb€kb€kb
 |3,0,32,0,1,0,1698912336,"€kb€kb€kb€kb€kb€kb€kb€kb"
 ""-	CHAR	0
-	e
-|3,1,36,0,1,0,1699982672,"e"
+	a
+|3,1,36,0,1,0,1700016239,"a"
 
 # File marks:
-'0  1  0  ~/printf/.git/MERGE_MSG
-|4,48,1,0,1699987708,"~/printf/.git/MERGE_MSG"
-'1  1  0  ~/printf/test2/main.c
-|4,49,1,0,1699987549,"~/printf/test2/main.c"
-'2  58  12  ~/printf/printer.c
-|4,50,58,12,1699985158,"~/printf/printer.c"
-'3  58  13  ~/printf/printer.c
-|4,51,58,13,1699985036,"~/printf/printer.c"
-'4  55  12  ~/printf/printer.c
-|4,52,55,12,1699984853,"~/printf/printer.c"
-'5  55  12  ~/printf/printer.c
-|4,53,55,12,1699984853,"~/printf/printer.c"
-'6  55  12  ~/printf/printer.c
-|4,54,55,12,1699984853,"~/printf/printer.c"
-'7  55  12  ~/printf/printer.c
-|4,55,55,12,1699984853,"~/printf/printer.c"
-'8  4  12  ~/printf/printer.c
-|4,56,4,12,1699984748,"~/printf/printer.c"
-'9  4  12  ~/printf/printer.c
-|4,57,4,12,1699984748,"~/printf/printer.c"
+'0  1  3  ~/printf/test2/README.md
+|4,48,1,3,1700016705,"~/printf/test2/README.md"
+'1  1  0  ~/printf/test2/README.md
+|4,49,1,0,1700016679,"~/printf/test2/README.md"
+'2  1  2  ~/printf/test2/README.md
+|4,50,1,2,1700016649,"~/printf/test2/README.md"
+'3  1  2  ~/printf/test2/README.md
+|4,51,1,2,1700016649,"~/printf/test2/README.md"
+'4  1  0  ~/printf/test2/README.md
+|4,52,1,0,1700016477,"~/printf/test2/README.md"
+'5  1  0  ~/printf/test2/README.md
+|4,53,1,0,1700016477,"~/printf/test2/README.md"
+'6  1  0  ~/printf/test2/README.md
+|4,54,1,0,1700016477,"~/printf/test2/README.md"
+'7  1  0  ~/printf/test2/README.md
+|4,55,1,0,1700016477,"~/printf/test2/README.md"
+'8  1  1  ~/printf/test2/README.md
+|4,56,1,1,1700016450,"~/printf/test2/README.md"
+'9  1  1  ~/printf/test2/README.md
+|4,57,1,1,1700016450,"~/printf/test2/README.md"
 
 # Jumplist (newest first):
--'  1  0  ~/printf/.git/MERGE_MSG
-|4,39,1,0,1699987708,"~/printf/.git/MERGE_MSG"
--'  1  0  ~/printf/test2/main.c
-|4,39,1,0,1699987549,"~/printf/test2/main.c"
--'  1  0  ~/printf/test2/main.c
-|4,39,1,0,1699987549,"~/printf/test2/main.c"
--'  58  12  ~/printf/printer.c
-|4,39,58,12,1699985158,"~/printf/printer.c"
--'  58  12  ~/printf/printer.c
-|4,39,58,12,1699985158,"~/printf/printer.c"
--'  58  12  ~/printf/printer.c
-|4,39,58,12,1699985158,"~/printf/printer.c"
--'  58  12  ~/printf/printer.c
-|4,39,58,12,1699985158,"~/printf/printer.c"
--'  58  13  ~/printf/printer.c
-|4,39,58,13,1699985036,"~/printf/printer.c"
--'  58  13  ~/printf/printer.c
-|4,39,58,13,1699985036,"~/printf/printer.c"
--'  58  13  ~/printf/printer.c
-|4,39,58,13,1699985036,"~/printf/printer.c"
--'  58  13  ~/printf/printer.c
-|4,39,58,13,1699985036,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984867,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984853,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984853,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984853,"~/printf/printer.c"
--'  55  12  ~/printf/printer.c
-|4,39,55,12,1699984853,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984778,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984748,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984748,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984748,"~/printf/printer.c"
--'  4  12  ~/printf/printer.c
-|4,39,4,12,1699984748,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  1  0  ~/printf/printer.c
-|4,39,1,0,1699984703,"~/printf/printer.c"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
--'  45  5  ~/printf/test2/main.h
-|4,39,45,5,1699984373,"~/printf/test2/main.h"
+-'  1  3  ~/printf/test2/README.md
+|4,39,1,3,1700016705,"~/printf/test2/README.md"
+-'  1  0  ~/printf/test2/README.md
+|4,39,1,0,1700016679,"~/printf/test2/README.md"
+-'  1  2  ~/printf/test2/README.md
+|4,39,1,2,1700016649,"~/printf/test2/README.md"
+-'  1  0  ~/printf/test2/README.md
+|4,39,1,0,1700016477,"~/printf/test2/README.md"
+-'  1  1  ~/printf/test2/README.md
+|4,39,1,1,1700016450,"~/printf/test2/README.md"
+-'  1  2  ~/printf/test2/README.md
+|4,39,1,2,1700016411,"~/printf/test2/README.md"
+-'  1  3  ~/printf/test2/README.md
+|4,39,1,3,1700016383,"~/printf/test2/README.md"
+-'  1  4  ~/printf/test2/README.md
+|4,39,1,4,1700016348,"~/printf/test2/README.md"
+-'  1  5  ~/printf/test2/README.md
+|4,39,1,5,1700016315,"~/printf/test2/README.md"
+-'  1  6  ~/printf/test2/README.md
+|4,39,1,6,1700016285,"~/printf/test2/README.md"
+-'  1  7  ~/printf/test2/README.md
+|4,39,1,7,1700016250,"~/printf/test2/README.md"
+-'  1  9  ~/printf/test2/README.md
+|4,39,1,9,1700016212,"~/printf/test2/README.md"
+-'  1  2  ~/printf/test2/README.md
+|4,39,1,2,1700016166,"~/printf/test2/README.md"
+-'  1  4  ~/printf/test2/README.md
+|4,39,1,4,1700016123,"~/printf/test2/README.md"
+-'  1  6  ~/printf/test2/README.md
+|4,39,1,6,1700016061,"~/printf/test2/README.md"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
+-'  4  0  ~/printf/.git/MERGE_MSG
+|4,39,4,0,1700015993,"~/printf/.git/MERGE_MSG"
 
 # History of marks within files (newest to oldest):
 
+> ~/printf/test2/README.md
+	*	1700016703	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	6
+	+	1	5
+	+	1	4
+	+	1	2
+	+	1	3
+	+	1	6
+	+	1	3
+
 > ~/printf/.git/MERGE_MSG
-	*	1699987693	0
-	"	1	0
+	*	1700015990	0
+	"	4	0
+
+> ~/printf/test2/main.h
+	*	1700015841	0
+	"	45	0
+	^	45	0
+	.	44	0
+	+	33	5
+	+	46	5
+	+	8	0
+	+	10	18
+	+	44	0
+
+> ~/printf/_printf.c
+	*	1699997933	0
+	"	74	10
+	^	74	11
+	.	74	11
+	+	4	41
+	+	74	11
+
+> ~/printf/test2/_printf.c
+	*	1699997520	0
+	"	7	26
+	^	7	27
+	.	7	26
+	+	1	2602
+	+	100	0
+	+	69	16
+	+	58	11
+	+	5	0
+	+	6	0
+	+	7	26
 
 > ~/printf/printer.c
 	*	1699985155	0
@@ -276,16 +323,6 @@
 	+	8	19
 	+	55	23
 	+	58	13
-
-> ~/printf/test2/main.h
-	*	1699984355	0
-	"	45	5
-	^	10	18
-	.	10	18
-	+	33	5
-	+	45	5
-	+	8	0
-	+	10	18
 
 > ~/printf/test2/main.c
 	*	1699984159	0
@@ -304,36 +341,6 @@
 > ~/printf/test2/test2
 	*	1699984038	0
 	"	1	0
-
-> ~/printf/test2/README.md
-	*	1699982733	0
-	"	1	7
-	^	1	8
-	.	1	7
-	+	1	6
-	+	1	5
-	+	1	4
-	+	1	2
-	+	2	0
-	+	1	7
-
-> ~/printf/test2/_printf.c
-	*	1699801255	0
-	"	6	0
-	^	6	0
-	.	5	0
-	+	1	2602
-	+	101	0
-	+	70	16
-	+	59	11
-	+	5	0
-
-> ~/printf/_printf.c
-	*	1699799665	0
-	"	4	40
-	^	4	41
-	.	4	41
-	+	4	41
 
 > ~/printf/printf
 	*	1699799585	0
