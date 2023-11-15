@@ -1,2 +1,2 @@
-al 0x1 x test
+al x1 x test
 2  
