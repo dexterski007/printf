@@ -79,8 +79,7 @@ int get_preci(const char *format, int *ind, va_list args)
 		return (preci);
 
 	preci = 0;
-	act_ind += 1;
-	while (format[act_ind] != '\0')
+	for (act_ind += 1; format[act_ind] != '\0'; act_ind++)
 	{
 		if (chkdig(format[act_ind]))
 		{
@@ -95,7 +94,6 @@ int get_preci(const char *format, int *ind, va_list args)
 		}
 		else
 			break;
-		act_ind++;
 	}
 
 	*ind = act_ind - 1;
@@ -122,15 +120,12 @@ int get_flag(const char *format, int *ind)
 
 	while (format[act_ind] != '\0')
 	{
-		while (flag_id[j] != '\0')
-		{
+		for (j = 0; flag_id[j] != '\0'; j++)
 			if (format[act_ind] == flag_id[j])
 			{
 				flag |= flag_arr[j];
 				break;
 			}
-			j++;
-		}
 		if (flag_id[j] == 0)
 			break;
 		act_ind++;

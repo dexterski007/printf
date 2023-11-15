@@ -135,20 +135,13 @@ int unsigned_printer(int chkneg, int ind,
 		space = '0';
 	if (wid > len)
 	{
-		while (i < (wid - len))
-		{
+		for (i = 0; i < wid - len; i++)
 			buff[i] = space;
-			i++;
-		}
 		buff[i] = '\0';
 		if (flag & 1)
-		{
 			return (write(1, &buff[ind], len) + write(1, &buff[0], i));
-		}
 		else
-		{
 			return (write(1, &buff[0], i) + write(1, &buff[ind], len));
-		}
 	}
 	return (write(1, &buff[ind], len));
 }

@@ -13,7 +13,7 @@
  * @size: size
  * Return: count
  */
-int print_hex(va_list args, char map[], char *buff,
+int print_hex(va_list args, char map[], char buff[],
 	int flag, char flag_ch, int wid, int preci, int size)
 {
 	int i = 1024 - 2;

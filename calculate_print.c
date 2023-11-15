@@ -113,7 +113,7 @@ int char_printer(char c, char *buff,
  * Return: count
  */
 int unsigned_printer(int chkneg, int ind,
-	char *buff,
+	char buff[],
 	int flag, int wid, int preci, int size)
 {
 	int len = 1024 - ind - 1, i = 0;
@@ -139,9 +139,13 @@ int unsigned_printer(int chkneg, int ind,
 			buff[i] = space;
 		buff[i] = '\0';
 		if (flag & 1)
+		{
 			return (write(1, &buff[ind], len) + write(1, &buff[0], i));
+		}
 		else
+		{
 			return (write(1, &buff[0], i) + write(1, &buff[ind], len));
+		}
 	}
 	return (write(1, &buff[ind], len));
 }

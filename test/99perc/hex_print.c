@@ -104,7 +104,7 @@ int pr_oct(va_list args, char *buff,
 }
 
 /**
- * print_HEX - print up hex
+ * pr_HEXA - print up hex
  *
  * @args: args
  * @buff: buff
